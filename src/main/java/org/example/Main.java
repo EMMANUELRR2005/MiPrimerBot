@@ -152,8 +152,8 @@ public class Main {
 //        explicacionUsoMap();
         try {
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-            botCuestionario bot = new botCuestionario();
-            botsApi.registerBot(bot);
+            botCuestionario botCues = new botCuestionario();
+            botsApi.registerBot(botCues);
         } catch (Exception ex) {
 
             System.out.println(ex.getMessage());
